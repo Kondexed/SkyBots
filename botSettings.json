@@ -1,5 +1,5 @@
 {
-    "token": "NDI4NzYzMTE0MjUxNjE2MjU2.DeyBpw.fji_oiST0EPrd5-GejCbpZSExz0",
+    "token": "process.env.SECRET",
     "prefix": "!",
-    "ytapi": "AIzaSyDOwoZcnYSwqY97GCPH0WnDM4NYmliN8aE"
+    "ytapi": "process.env.SECRETYT"
 }
