@@ -1,5 +1,5 @@
 {
-    "token": "process.env.SECRET",
+    "token": "process.env.token",
     "prefix": "!",
-    "ytapi": "process.env.SECRETYT"
+    "ytapi": "process.env.ytapi"
 }
