@@ -1,5 +1,3 @@
-
-const botSettings = require("botsettings.json");
 const Discord = require("discord.js");
 const fs = require("fs");
 const ytdl = require("ytdl-core");
@@ -10,7 +8,7 @@ const moment = require('moment');
 const sql = require('sqlite');
 sql.open('./score.sqlite');
 
-const prefix = botSettings.prefix;
+const prefix = process.env.prefix;
 
 const recentMessage = new Set();
 
@@ -167,7 +165,7 @@ bot.on("message", async message => {
     let command = messageArray[0].toLowerCase(); //Command is the first "word". Ex: ${botSettings.prefix}Ban someone, ${botSettings.prefix}Ban = command
     args = messageArray.slice(1); //Args - Everything BUT command
 
-    if(!command.startsWith(botSettings.prefix)) return; //return if does not start with prefix
+    if(!command.startsWith(process.env.prefix)) return; //return if does not start with prefix
 
 
     let cmd = bot.commands.get(command.slice(prefix.length));
@@ -176,5 +174,5 @@ bot.on("message", async message => {
         
 });
 
-bot.login(botSettings.token); //Log in with bot token.
+bot.login(process.env.token); //Log in with bot token.
 
