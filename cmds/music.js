@@ -1,13 +1,12 @@
 const Discord = require("discord.js");
 const ytdl = require('ytdl-core');
 const request = require('request');
-const botSettings = require('../botSettings.json');
 const ytinfo = require('youtube-info');
 
 module.exports.run = async (bot, message, args) => {
 
     let newArgs = args.slice(1);
-    const ytAPI = botSettings.ytapi;
+    const ytAPI = process.env.ytapi;
 
     var guilds = {}
 
