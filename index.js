@@ -130,9 +130,6 @@ bot.on("message", async message => {
 
     }
 
-    /*
-    Heroku doesn't allow this
-    
     let currentLog = fs.readFileSync('textLog.rtf', 'utf8'); //Get current text log
 
     let date = moment().format('L');
@@ -141,7 +138,6 @@ bot.on("message", async message => {
 
     fs.writeFileSync('textLog.rtf', `${currentLog}\n\n${logTime} ${message.author.tag} (${message.author.id}):\n ${message}`, 'utf8'); 
     //Write log to file
-    */
 
     if(message.author.bot) return; //Bot can't use it's own commands.
 
