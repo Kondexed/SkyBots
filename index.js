@@ -40,7 +40,7 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", () => {
     console.log(`Bot is ready ${bot.user.username}`);
-    bot.user.setActivity("SkyBot!");    
+    bot.user.setActivity("SkyWars.Com");    
 });
 //Set playing status, and console.log when ready.
 
@@ -68,6 +68,7 @@ bot.on("message", async message => {
 
     let filterBypass = [
         '428763114251616256'
+        '476643015511900181'
     ] //These ID's can bypass filter.
 
     let i = 0;
