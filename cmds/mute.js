@@ -31,7 +31,7 @@ module.exports.run = async (bot, message, args) => {
     }
     if(toMute.roles.has(role.id)) return message.channel.send("This user is already muted.");
     await toMute.addRoles(role);
-    banLog.send("I have muted them");
+    banLog.send(`Muted ${toMute.tag}.`);
 }
 
 module.exports.help = {
