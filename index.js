@@ -40,7 +40,7 @@
  
  bot.on("ready", () => {
      console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("SkyWars.Com");    
+     bot.user.setActivity("Ooh God No Filter");    
  });
  //Set playing status, and console.log when ready.
  
@@ -60,8 +60,6 @@
  });
  
  bot.on("message", async message => {
-  
-  if(!message.author.roles.has(480914995786547203)) return message.channel.send('Sorry <@${message.author.id}>, you do not have permission to use this bot!');
  
      let filteredWords = [
          
