@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
+    
+    let banLog = bot.channels.find('id', '466397801585311754');
 
     if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(`Sorry <@${message.author.id}>, you do not have permission to kick members!`);
 
@@ -32,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor("#0a0b0c")
         .setThumbnail(toKick.avatarURL);
 
-    message.channel.send({embed: embed});
+    banLog.send({embed: embed});
 
     toKick.kick(reason = `${kickReason}`);
 }
