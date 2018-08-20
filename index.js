@@ -60,6 +60,8 @@
  });
  
  bot.on("message", async message => {
+  
+  if(!message.author.roles.has(480914995786547203)) return message.channel.send('Sorry <@${message.author.id}>, you do not have permission to use this bot!');
  
      let filteredWords = [
          
