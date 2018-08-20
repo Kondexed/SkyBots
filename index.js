@@ -40,7 +40,7 @@
  
  bot.on("ready", () => {
      console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("SkyBot!");    
+     bot.user.setActivity("SkyWars.Com");    
  });
  //Set playing status, and console.log when ready.
  
