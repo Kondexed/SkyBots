@@ -1,4 +1,6 @@
 module.exports.run = async (bot, message, args) => {
+    
+    let banLog = bot.channels.find('id', '466397801585311754');
 
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have permission.");
     
@@ -29,7 +31,7 @@ module.exports.run = async (bot, message, args) => {
     }
     if(toMute.roles.has(role.id)) return message.channel.send("This user is already muted.");
     await toMute.addRoles(role);
-    message.channel.send("I have muted them");
+    banLog.send("I have muted them");
 }
 
 module.exports.help = {
