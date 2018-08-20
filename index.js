@@ -49,9 +49,9 @@
      fs.writeFileSync('userList.txt', `\n${member}`, 'utf8'); //Write to user list
      let guild = member.guild;
  
-     let welcomeChannel = bot.channels.find('id', '428763647918211084'); //Find welcomeChannel by ID. 
+     let welcomeChannel = bot.channels.find('id', '469293906857558038'); //Find welcomeChannel by ID. 
  
-     welcomeChannel.send(`Welcome to Skyblock's official discord ${member.user}!`).catch(console.error); //Welcome users in welcomeChannel
+     welcomeChannel.send(`Welcome to SkyBot's Discord ${member.user}!`).catch(console.error); //Welcome users in welcomeChannel
  });
  
  bot.on('guildMemberRemove', member => {
@@ -66,7 +66,7 @@
      ] //filter
  
      let filterBypass = [
-         ' 476643015511900181'
+         '476643015511900181'
      ] //These ID's can bypass filter.
  
      let i = 0;
