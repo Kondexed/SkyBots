@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     if(!role || !toMute.roles.has(role.id)) return message.channel.send("This user is not muted.");
 
     await toMute.removeRole(role);
-    message.channel.send("I have unmuted them");
+    banLog.send(`Unmuted ${toMute.tag}.`);
 }
 
 module.exports.help = {
