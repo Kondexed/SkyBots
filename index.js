@@ -67,7 +67,7 @@
      ] //filter
  
      let filterBypass = [
-         '428763114251616256'
+         '428763114251616256,476643015511900181'
      ] //These ID's can bypass filter.
  
      let i = 0;
