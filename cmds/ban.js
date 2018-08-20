@@ -3,6 +3,8 @@ const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
 
+    let banLog = bot.channels.find('id', '466397801585311754');
+    
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(`Sorry <@${message.author.id}>, you do not have permission to ban members!`);
 
     let toBan = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]) || bot.users.find('id', `${args[0]}`);
@@ -32,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor("#0a0b0c")
         .setThumbnail(toBan.avatarURL);
 
-    message.channel.send({embed: embed});
+    banLog.send({embed: embed});
 
     toBan.ban(reason = `${banReason}`);
 
