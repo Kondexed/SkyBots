@@ -40,7 +40,7 @@
  
  bot.on("ready", () => {
      console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("SkyWars.Com");    
+     bot.user.setActivity("Ooh God No Filter");    
  });
  //Set playing status, and console.log when ready.
  
@@ -62,8 +62,7 @@
  bot.on("message", async message => {
  
      let filteredWords = [
-         'fuck',
-         'dick'
+         
      ] //filter
  
      let filterBypass = [
