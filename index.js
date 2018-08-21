@@ -40,7 +40,7 @@
  
  bot.on("ready", () => {
      console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("SkyWars.Com");    
+     bot.user.setActivity("Shop.SkyBlock.Net");    
  });
  //Set playing status, and console.log when ready.
  
@@ -62,6 +62,9 @@
  bot.on("message", async message => {
  
      let filteredWords = [
+      Fuck
+      dick
+      shit
          
      ] //filter
  
