@@ -1,4 +1,4 @@
- const Discord = require("discord.js");
+const Discord = require("discord.js");
  const fs = require("fs");
  const ytdl = require("ytdl-core");
  const request = require("request");
@@ -40,7 +40,7 @@
  
  bot.on("ready", () => {
      console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("Shop.SkyBlock.Net");    
+     bot.user.setActivity("SkyWars.Com");    
  });
  //Set playing status, and console.log when ready.
  
@@ -62,9 +62,6 @@
  bot.on("message", async message => {
  
      let filteredWords = [
-      Fuck
-      dick
-      shit
          
      ] //filter
  
