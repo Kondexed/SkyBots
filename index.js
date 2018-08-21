@@ -66,7 +66,8 @@ const Discord = require("discord.js");
      ] //filter
  
      let filterBypass = [
-         '476643015511900181'
+         '476643015511900181',
+         '428763114251616256'
      ] //These ID's can bypass filter.
  
      let i = 0;
