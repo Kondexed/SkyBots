@@ -41,6 +41,8 @@ module.exports.run = async (bot, message, args) => {
       let date = moment().format('L');
       let time = moment().format('LTS');
       message.channel.send(`[${date} ${time}]`);
+    
+    message.channel.send('Test complete!');
 
 
 }
