@@ -62,7 +62,7 @@ const Discord = require("discord.js");
  bot.on("message", async message => {
  
      let filteredWords = [
-         
+         'test'
      ] //filter
  
      let filterBypass = [
@@ -79,7 +79,7 @@ const Discord = require("discord.js");
              let m = 0;
  
              for(m=0; m<filterBypass.length; m++) {
-                 if(message.author.id === filterBypass[m]) return;
+                 if(message.author.id === filterBypass[m]) return message.channel.send('Filter Ignored!;);
              }
              
              message.delete(250); //Delete message violating the filter after .25 seconds.
