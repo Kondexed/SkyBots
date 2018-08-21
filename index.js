@@ -79,7 +79,7 @@ const Discord = require("discord.js");
              let m = 0;
  
              for(m=0; m<filterBypass.length; m++) {
-                 if(message.author.id === filterBypass[m]) return message.channel.send('Filter Ignored!;);
+                 if(message.author.id === filterBypass[m]) return message.channel.send('Filter Ignored!');
              }
              
              message.delete(250); //Delete message violating the filter after .25 seconds.
