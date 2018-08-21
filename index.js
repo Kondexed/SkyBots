@@ -62,7 +62,7 @@ const Discord = require("discord.js");
  bot.on("message", async message => {
  
      let filteredWords = [
-         'test'
+         'fuck'
      ] //filter
  
      let filterBypass = [
