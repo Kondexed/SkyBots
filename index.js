@@ -38,9 +38,8 @@ const Discord = require("discord.js");
  
  //Load commands
  bot.on("ready", () => {
-     console.log(`Bot is ready ${bot.user.username}`);	     console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("SkyWars.Com");    	     bot.user.setActivity("With Code (And Ignoring Michael)");    
- });	 });
+     console.log(`Bot is ready ${bot.user.username}`);	    
+ });
  //Set playing status, and console.log when ready.
  
  bot.on('guildMemberAdd', member => {
