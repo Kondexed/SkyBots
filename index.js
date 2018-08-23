@@ -38,10 +38,10 @@ const Discord = require("discord.js");
  
  //Load commands
  
- bot.on("ready", () => {
-     console.log(`Bot is ready ${bot.user.username}`);
-     bot.user.setActivity("With Code (And Ignoring Michael)");    
- });
+bot.on("ready", () => {
+	bot.user.setPresence({game: {name: tickets + " tickets", type: "WATCHING"}});
+	setInterval(() => {bot.user.setPresence({game: {name: tickets + " tickets", type: "WATCHING"}});}, 600000);
+});
  //Set playing status, and console.log when ready.
  
  bot.on('guildMemberAdd', member => {
